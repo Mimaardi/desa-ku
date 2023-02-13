@@ -68,7 +68,13 @@
 <body class="">
 <div id="wrapper" class="clearfix">
   <!-- preloader -->
-  
+  <div id="preloader">
+    <div id="spinner">
+      <img class="floating" src="https://i.postimg.cc/wj308LVk/images.png" alt="">
+      <h5 class="line-height-50 font-18 ml-15">Loading <b>Desa.COM</b></h5>
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+  </div>
 
   <!-- Header -->
   <header class="header">
@@ -77,7 +83,7 @@
         <div class="container">
           <nav id="menuzord" class="menuzord default" style="background-color: #AAEDFC ;">             
             <ul class="menuzord-menu">
-              <li ><a href="features-header-style2.html#">Beranda</a>
+              <li class="active"><a href="features-header-style2.html">Beranda</a>
                 <ul class="">
                     <ul class="">
                     </ul>
@@ -88,11 +94,9 @@
                 <ul class="dropdown">
                   <li><a href="#">Profil Desa</a>
                     <ul class="dropdown">
-                      <li><a href="tentangdesa.html#">Tentang Desa</a></li>
-                      <li><a href="visimisi.html#">Visi dan Misi Desa</a></li>
+                      <li><a href="tentangdesa.html">Tentang Desa</a></li>
+                      <li><a href="visimisi.html">Visi dan Misi Desa</a></li>
                     </ul>
-                  </li>
-                  <li><a href="strukturperangkatdesa.html">Struktur Perangkat Desa</a>
                   </li>
                   <li><a href="saranaumum.html">Sarana Umum</a>
                   </li>
@@ -137,13 +141,13 @@
                   </li>
                 </ul>
         
-              <li class="active"><a href="#">Kelembagaan</a>
+              <li><a href="#">Kelembagaan</a>
                 <ul class="dropdown">
                   <li><a href="pemerintahdesa.html">Pemerintah Desa</a></li>
                   <li><a href="karangtaruna.html">Karang Taruna</a></li>
                   <li><a href="pkk.html">PKK</a></li>
                 </ul>
-              <li ><a href="#">Data</a>
+              <li><a href="#">Data</a>
                 <ul class="dropdown">
                   <li><a href="#">Dinamika Penduduk</a>
                     <ul class="dropdown">
@@ -156,27 +160,80 @@
                   </li>
                 </ul>
               </li>
-              <li ><a href="peraturandesa.html">Peraturan Desa</a></li>
-              <li ><a href="#">Potensi Desa</a>
+              <li><a href="peraturandesa.html">Peraturan Desa</a></li>
+              <li><a href="#">Potensi Desa</a>
                 <ul class="dropdown">
                   <li><a href="umkm.html">UMKM</a></li>
                   <li><a href="pariwisata.html">Pariwisata</a></li>
                 </ul>
               </li>
-              <li ><a href="penghargaan.html">Penghargaan</a></li>
-              <li ><a href="berita.html">Berita</a></li>
+              <li><a href="penghargaan.html">Penghargaan</a></li>
+              <li><a href="berita.html">Berita</a></li>
             </ul>
             <div class="pull-right flip hidden-sm hidden-xs mt-20 pt-5" style="margin-right: -0px;">
-             <a class="btn btn-colored btn-flat" href="index-sp-layout2.html" style="background-color:#149DBB; color:#fff" ><b>Back</b></a>
             </div>
           </nav>
         </div>
       </div>
     </div>
   </header>
-
-      <!-- Section: Causes -->
-<h1>PKK</h1>
+  
+  <!-- image header -->
+  <section class="inner-header divider layer-overlay overlay-dark-8" data-bg-img="https://i.postimg.cc/XqJTjH9W/sedang-1614760636-Screenshot-14.jpg">
+    <div class="container pt-200 pb-40">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row"> 
+          <div class="col-md-6">
+            <h1 class="text-white font-45">PKK</h1>
+            <ol class="breadcrumb text-left mt-10 white">
+              <li><a href="index-mp-layout2.html">Beranda</a></li>
+              <li><a href="#">Kelembagaan</a></li>
+              <li class="active" style="color: #AAEDFC;">PKK</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      <!-- Section: Causes -->  
+      <div style="margin-bottom: 20px;">
+        <div class="container">
+            <center>
+                <img src="https://i.postimg.cc/jdPHWnNW/PKK-Logo-vector-cdr-removebg-preview.png" style="width: 200px; margin-top: 20px;">
+                <h3 class="display-5">Struktur PKK</h3>
+                <h2 class="display-6" style="color: #149DBB; margin-bottom: 10px;">Nama Desa</h2>
+            </center>
+            <table class="table table-hover mt-3">
+                <thead>
+                <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Jabatan</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Sumarno</td>
+                    <td>Kepala Desa</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!--END Section: Causes -->
 
   
   <footer id="footer" class="footer divider">
@@ -210,14 +267,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="list-inline styled-icons icon-hover-theme-colored icon-gray icon-circled text-center mt-30 mb-10">
-              <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a> </li>
-            </ul>
           </div>
         </div>
       </div>

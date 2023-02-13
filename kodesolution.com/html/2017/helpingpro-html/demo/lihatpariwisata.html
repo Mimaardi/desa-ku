@@ -68,6 +68,13 @@
 <body class="">
 <div id="wrapper" class="clearfix">
   <!-- preloader -->
+  <div id="preloader">
+    <div id="spinner">
+      <img class="floating" src="https://i.postimg.cc/wj308LVk/images.png" alt="">
+      <h5 class="line-height-50 font-18 ml-15">Loading</h5>
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+  </div>
 
   <!-- Header -->
   <header class="header">
@@ -134,13 +141,13 @@
                   </li>
                 </ul>
         
-              <li><a href="#">Kelembagaan</a>
+              <li class="active"><a href="#">Kelembagaan</a>
                 <ul class="dropdown">
                   <li><a href="pemerintahdesa.html">Pemerintah Desa</a></li>
                   <li><a href="karangtaruna.html">Karang Taruna</a></li>
                   <li><a href="pkk.html">PKK</a></li>
                 </ul>
-              <li><a href="#">Data</a>
+              <li ><a href="#">Data</a>
                 <ul class="dropdown">
                   <li><a href="#">Dinamika Penduduk</a>
                     <ul class="dropdown">
@@ -153,15 +160,15 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="peraturandesa.html">Peraturan Desa</a></li>
-              <li><a href="#">Potensi Desa</a>
+              <li ><a href="peraturandesa.html">Peraturan Desa</a></li>
+              <li ><a href="#">Potensi Desa</a>
                 <ul class="dropdown">
                   <li><a href="umkm.html">UMKM</a></li>
                   <li><a href="pariwisata.html">Pariwisata</a></li>
                 </ul>
               </li>
-              <li class="active"><a href="penghargaan.html">Penghargaan</a></li>
-              <li><a href="berita.html">Berita</a></li>
+              <li ><a href="penghargaan.html">Penghargaan</a></li>
+              <li ><a href="berita.html">Berita</a></li>
             </ul>
             <div class="pull-right flip hidden-sm hidden-xs mt-20 pt-5" style="margin-right: -0px;">
             </div>
@@ -170,118 +177,60 @@
       </div>
     </div>
   </header>
-
-      <!-- Section: Causes -->
-    <div>
-    <section id="about">
-      <div class="container pb-40">
-        <div class="section-title text-center">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <h2 class="text-uppercase line-bottom-center mt-0">Penghargaan <span class="" style="color: #149DBB">Desa</span></h2>
-              
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem<br> voluptatem obcaecati!</p>
-            </div> 
-          </div>
-        </div>
-        <div class="row multi-row-clearfix">
-          <div class="col-sm-6 col-md-4">
-            <div class="causes bg-silver-light maxwidth500 mb-30">
-              <div class="thumb">
-                <img src="images/project/1.jpg" alt="" class="img-fullwidth">
-              </div>
-              <div class="causes-details border-1px bg-white clearfix p-20 pt-10 pb-20">
-                <h4 class="text-uppercase"><a href="page-single-cause.html">Education for Childreen</a></h4>
-                
-                <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                <a href="page-donate.html" class="btn btn-default btn-xs font-16 mt-10" style="color: #149DBB">Baca <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="causes bg-silver-light maxwidth500 mb-30">
-              <div class="thumb">
-                <img src="images/project/2.jpg" alt="" class="img-fullwidth">
-              </div>
-              <div class="causes-details border-1px bg-white clearfix p-20 pt-10 pb-20">
-                <h4 class="text-uppercase"><a href="page-single-cause.html">Education for Childreen</a></h4>
-                
-                <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                <a href="page-donate.html" class="btn btn-default btn-xs font-16 mt-10" style="color: #149DBB">Baca <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="causes bg-silver-light maxwidth500 mb-30">
-              <div class="thumb">
-                <img src="images/project/3.jpg" alt="" class="img-fullwidth">
-              </div>
-              <div class="causes-details border-1px bg-white clearfix p-20 pt-10 pb-20">
-                <h4 class="text-uppercase"><a href="page-single-cause.html">Education for Childreen</a></h4>
-     
-                <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                <a href="page-donate.html" class="btn btn-default btn-xs font-16 mt-10" style="color: #149DBB">Baca <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-              </div>
-            </div>
+  
+  <!-- image header -->
+  <section class="inner-header divider layer-overlay overlay-dark-8" data-bg-img="https://i.postimg.cc/BQgcJSMx/berita.jpg">
+    <div class="container pt-200 pb-40">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row"> 
+          <div class="col-md-6">
+            <h3 class="text-white font-45">Judul Pariwisata</h3>
+            <ol class="breadcrumb text-left mt-10 white">
+              <li><a href="index-mp-layout1.html">Beranda</a></li>
+              <li><a href="#">Penghargaan</a></li>
+              <li class="active" style="color: #AAEDFC;">Judul Pariwisata</li>
+            </ol>
           </div>
         </div>
       </div>
-    
-    
-
-
-    
-      <div class="container pb-40">
-        <div class="section-title text-center">
-          
-        <div class="row multi-row-clearfix">
-          <div class="col-sm-6 col-md-4">
-            <div class="causes bg-silver-light maxwidth500 mb-30">
-              <div class="thumb">
-                <img src="images/project/1.jpg" alt="" class="img-fullwidth">
-              </div>
-              <div class="causes-details border-1px bg-white clearfix p-20 pt-10 pb-20">
-                <h4 class="text-uppercase"><a href="page-single-cause.html">Education for Childreen</a></h4>
-                
-                <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                <a href="page-donate.html" class="btn btn-default btn-xs font-16 mt-10" style="color: #149DBB">Baca <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="causes bg-silver-light maxwidth500 mb-30">
-              <div class="thumb">
-                <img src="images/project/2.jpg" alt="" class="img-fullwidth">
-              </div>
-              <div class="causes-details border-1px bg-white clearfix p-20 pt-10 pb-20">
-                <h4 class="text-uppercase"><a href="page-single-cause.html">Education for Childreen</a></h4>
-                
-                <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                <a href="page-donate.html" class="btn btn-default btn-xs font-16 mt-10" style="color: #149DBB">Baca <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="causes bg-silver-light maxwidth500 mb-30">
-              <div class="thumb">
-                <img src="images/project/3.jpg" alt="" class="img-fullwidth">
-              </div>
-              <div class="causes-details border-1px bg-white clearfix p-20 pt-10 pb-20">
-                <h4 class="text-uppercase"><a href="page-single-cause.html">Education for Childreen</a></h4>
-     
-                <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                <a href="page-donate.html" class="btn btn-default btn-xs font-16 mt-10" style="color: #149DBB">Baca <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     </div>
+  </section>
+  
+      <!-- Section: Causes --> 
+        <div class="container mt-30 mb-30">
+            <center>
+                <div style="background-color: #f6f6f6; max-width: 700px; border-radius: 10px;">
+                <div class="car pt-20 pb-20">
+                    <section id="home" class="divider" style="width: 80vh; border-radius: 10px;">
+                        <img src="https://i.postimg.cc/Xq2WFnmB/wisata.jpg">
+                    </section>
+                    </div>
+                    </div>
+                <p>12/02/2023</p>
+            </center>
+            <div class="section mt-50 mb-50" style="background-color: #f6f6f6; padding: 20px; border-radius: 10px;">
+                <h3>Judul Pariwisata</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ab ipsam officiis eaque quo autem eligendi soluta exercitationem sequi enim omnis facilis ad perspiciatis esse, accusamus expedita voluptates dolore. Asperiores necessitatibus, quaerat minima fuga error veritatis voluptatum quo, enim recusandae ipsum odit neque delectus nisi voluptates blanditiis! Libero, voluptatem dicta!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum eaque omnis, accusamus placeat earum facilis error recusandae magni in, delectus repellat rem minus architecto, minima nostrum? Id aliquam numquam explicabo a enim saepe quas. Nobis voluptas sapiente, dolorum maiores quas itaque? Amet cupiditate quod aliquam nihil sapiente, ad omnis quo eaque itaque ipsam quam. Expedita et aperiam, deleniti voluptatem assumenda nemo quae minima, omnis ex saepe dolorum delectus dicta ut ullam, vel exercitationem nostrum dignissimos nisi. Voluptate, quaerat rerum ea explicabo ipsam velit a deserunt doloremque doloribus et distinctio molestias! Architecto, similique nulla. Dolorum, harum modi. Fugit, vitae reiciendis!</p>
+                <center>
+                    <div style="background-color: #f6f6f6; max-width: 700px; border-radius: 10px;">
+                    <div class="car pt-20 pb-20">
+                        <section id="home" class="divider" style="width: 50vh; border-radius: 10px;">
+                            <img src="https://i.postimg.cc/Xq2WFnmB/wisata.jpg">
+                        </section>
+                        </div>
+                        </div>
+                        <br>
+                </center>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, velit. Autem voluptatum omnis quos sapiente, atque cum exercitationem tempore. Commodi minima velit corrupti consectetur quos. Perspiciatis dicta ipsam itaque repudiandae eos aspernatur inventore in. Nam, molestias. Magni molestiae mollitia ex rerum tempore dolorem inventore sequi ullam nobis debitis consequatur placeat error nam, recusandae iure quo nostrum exercitationem earum, molestias amet.</p>
+                <iframe src="https://www.google.com/maps/place/Malang,+Kota+Malang,+Jawa+Timur/@-7.8915751,112.6079458,15z/data=!4m2!3m1!1s0x2dd62822063dc2fb:0x78879446481a4da2" height="200" width="300" title="description"></iframe>
+            </div>
+        </div>
 <!--END Section: Causes -->
 
   
-  <footer id="footer" class="footer divider">
+<footer id="footer" class="footer divider">
     <div class="footer-top layer-overlay overlay-dark-8">
       <div class="container pt-60 pb-30" >
         <div class="row">
