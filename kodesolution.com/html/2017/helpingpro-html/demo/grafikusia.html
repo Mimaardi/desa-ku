@@ -64,6 +64,57 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style>
+	#chartdiv {
+	width		: 100%;
+	height		: 500px;
+	font-size	: 11px;
+}					
+</style>
+
+<style>
+
+
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #149DBB;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #149DBB;;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #149DBB;;
+  }
+  
+      </style>
 </head>
 <body class="">
 <div id="wrapper" class="clearfix">
@@ -125,7 +176,95 @@
   </header>
 
       <!-- Section: Causes -->
-<h1>GRAFIK USIA</h1>
+      <div class="container pb-40">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="text-uppercase line-bottom-center mt-0">Grafik Usia <br><span class="" style="color: #149DBB">DESA KUTA</span></h2>
+            </div>
+          </div>
+          </div>
+          </div>
+          <!-- Section: Causes -->
+          
+          <script src="https://www.amcharts.com/lib/3/amcharts.js" style="color:#fff"></script>
+          <script src="https://www.amcharts.com/lib/3/pie.js" style="color:#fff"></script>
+          <script src="https://www.amcharts.com/lib/3/themes/light.js" style="color:#fff"></script>
+          <div id="chartdiv" style="margin-top: -100px;">
+              </tr></table></div>
+          <script >var chart = AmCharts.makeChart( "chartdiv", {
+            "type": "pie",
+            "theme": "light",
+            "dataProvider": [ {
+              "country": "Balita (0-5 Tahun)",
+              "litres": 501.9
+            }, {
+              "country": "Anak - Anak (5-11 Tahun)",
+              "litres": 301.9
+            }, {
+              "country": "Remaja (17-25 Tahun)",
+              "litres": 201.1
+            }, {
+              "country": "Dewasa (17-45 Tahun)",
+              "litres": 165.8
+            }, {
+              "country": "Lansia (46-65 Tahun)",
+              "litres": 139.9
+            }, {
+              "country": "Manula (65 Tahun Keatas)",
+              "litres": 128.3
+            }, ],
+            "valueField": "litres",
+            "titleField": "country",
+             "balloon":{
+             "fixedPosition":true
+            },
+            "export": {
+              "enabled": true
+            }
+            } );
+            </script>	
+        <table class="content-table" style="margin-left: 475px;">
+          <thead>
+            <tr>
+            <th>No</th>
+            <th>Jenis</th>
+            <th>Jumlah</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>1</td>
+            <td>Balita (0-5 Tahun)</td>
+            <td>501.9</td>
+            </tr>
+            <tr class="active-row">
+              <td>2</td>
+              <td>Anak - Anak (5-11 Tahun)</td>
+              <td>301.9</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Remaja (17-25 Tahun)</td>
+            <td>201.1</td>
+            </tr>
+            <tr class="active-row">
+              <td>4</td>
+              <td>Dewasa (17-45 Tahun)</td>
+              <td>165.8</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Lansia (46-65 Tahun)</td>
+              <td>139.9</td>
+              </tr>
+              <tr class="active-row">
+                <td>4</td>
+                <td>Manula (65 Tahun Keatas)</td>
+                <td>128.3</td>
+              </tr> 
+          </tbody>
+          </table>
 
   
   <footer id="footer" class="footer divider">
