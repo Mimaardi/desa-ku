@@ -322,7 +322,7 @@ h5 {
     -webkit-transition: all .3s ease;
 }
 .color-picker a.handle {
-    position: absolute;
+    position: ;
     top: 0;
     left: 239px;
     width: 50px;
