@@ -681,7 +681,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
     height: 45px;
     padding-left: 15px;
     padding-top: 11px;
-    color: #ccc;
+    color: #0f0f0f;
 }
 .intro .zelect.open {
     border-bottom-left-radius: 0;
