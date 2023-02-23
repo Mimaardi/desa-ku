@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('desa_rules', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('role')->default('admin_desa');
-            $table->string('password');
-            $table->string("gambar");
-            $table->rememberToken();
+            $table->foreignId('profile_id');
+            $table->foreign('profile_id')
+            ->references('id')
+            ->on('desa_profiles')
+            ->onDelete('restrict')
+            ->onUpdate('restrict');
+            $table->string('peraturan');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('desa_rules');
     }
 };
